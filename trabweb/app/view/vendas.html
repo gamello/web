@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pitiza GJM - Pedido</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="icon" href="../../img/icc.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../../img/icc.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row topo">
+      <div class="col-md-2 logo">
+        <a href="vendas.html"><img src="../../img/logo.jpg" alt="Falha no carregamento"></a>
+      </div>
+      <div class="col-md-2">
+      <h2>Pitza GJM</h2>
+      </div>
+      <div class="col-md-2 contato">
+        <h2>Contato:</h2>
+      </div>
+      <div class="col-md-2 d">
+      <strong>(21) <ins>3333-4444</ins>
+      <p>(21) <ins>99999-9999</ins></p></strong>
+      </div>
+      <div class="col-md-4">
+      <strong>Rua das pizzas, numero 7, Campo Grande.</strong>
+      <p>Rio de janeiro, Brasil.</p>
+      </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row menu">
+        <div class="col-md-4">
+          <ul>
+            <li><a href="#">Usuario Logado: Vendas</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row corpo">
+        <div class="col-md-2 menulateral">
+          <ul>
+            <p id="k">Cardápio</p>
+            <li><a href="#" data-toggle="collapse" data-target="#demo">Pizzas</a></li> <!-- tamanho e sabores padrao ocultos, qnd clicar no pizza mostrar/ocultar. -->
+            <ul id="demo" class="collapse">
+              <li><p>Frango com catupiry</p></li>
+              <li><p>Portuguesa</p></li>
+              <li><p>Musarela</p></li>
+              <li><p>Calabresa</p></li>
+            </ul>
+            <li><a href="#" data-toggle="collapse" data-target="#demo1">Bebidas</a></li>
+            <ul id="demo1" class="collapse">
+              <li><p>Sucos</p></li>
+              <li><p>Refrigerante lata 350ml</p></li>
+              <li><p>Refrigerante 2l</p></li>
+            </ul>
+            </ul>
+        </div>
+        <div class="col-md-6" id="conteudo">
+          <form class="" action="pedido.php" method="post">
+            <h4 id="k">Pizzas</h4>
+            <h6>Sabadores</h6>
+            <img src="../../img/catupiry.png" alt="">
+            <input type="radio" name="p" id="a1" value=""> <label id="ja" for="a1">Frango c/catupiry</label>
+            <img src="../../img/calabresa.png" alt="">
+            <input type="radio" name="p" id="a2" value=""> <label id="ja" for="a2">Calabresa</label><br><br>
+            <img src="../../img/portuguesa.png" alt="">
+            <input type="radio" name="p" id="a3" value=""> <label id="ja" for="a3">Portuguesa</label>
+            <img src="../../img/mussarela.png" alt="">
+            <input type="radio" name="p" id="a4" value=""> <label id="ja" for="a4">Mussarela</label>
+          <!-- </div> -->
+            <!-- <div class="col-md-4"> -->
+              <h6>Tamanhos</h6>
+              <img src="../../img/1.png" id="tam" alt="">
+              <input type="radio" name="t" id="aa1" value=""> <label id="ja" for="aa1">Pequena</label>
+              <img src="../../img/2.png" id="tam" alt="">
+              <input type="radio" name="t" id="aa2" value=""> <label id="ja" for="aa2">Média</label><br><br>
+              <img src="../../img/3.png" id="tam" alt="">
+              <input type="radio" name="t" id="aa3" value=""> <label id="ja" for="aa3">Grande</label>
+              <img src="../../img/4.png" id="tam" alt="">
+              <input type="radio" name="t" id="aa4" value=""> <label id="ja" for="aa4">Gigante</label>
+          <hr align="center" width="90%" size="1" color=red>
+            <h4 id="k">Bebidas</h4>
+            <img src="../../img/suco.png" alt="browse nao suporta">
+            <input type="radio" name="b" id="b1" value=""> <label id="ja" for="b1">Suco natural</label>
+            <img src="../../img/refrilata.png" alt="browse nao suporta">
+            <input type="radio" name="b" id="b2" value=""> <label id="ja" for="b2">Refrigerante lata 350ml</label><br><br>
+            <img src="../../img/2l.png" alt="browse nao suporta">
+            <input type="radio" name="b" id="b3" value=""> <label id="ja" for="b3">Refrigerante 2l</label>
+          </form>
+      </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row rodape">
+        <div class="col-md-3">
+          <h5>Contato</h5>
+          <p class="ctt">contato@gjm.com</p>
+          <p></p>
+        </div>
+        <div class="col-md-3">
+          <h5>SAC</h5>
+          <a href="ouvidoria.html">Ouvidoria</a><br>
+        </div>
+        <div class="col-md-3">
+          <h5>Sobre nós</h5>
+          <a href="termos.html">Termos de uso</a><br>
+          <a href="privacidade.html">Privacidade</a>
+        </div>
+        <div class="col-md-3">
+          <h5>Redes sociais</h5>
+          <a href="https://www.facebook.com/" target="_blank"><img src="../../img/fb_icon.png" alt="browse não suporta"></a>&nbsp&nbsp<a href="https://www.twitter.com/" target="_blank"><img src="../../img/tt_icon.png" alt="browse não suporta"></a>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-12 rodape-nota">
+          <hr align="center" width="90%" size="1" color=red>
+          <p>©2017 Pitza GJM Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="../../js/jquery.min.js"></script>
+      <script src="../../js/bootstrap.min.js"></script>
+  </body>
+</html>
